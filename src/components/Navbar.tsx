@@ -1,10 +1,34 @@
 import Image from 'next/image'
-import useHighlighter from '~/lib/hooks/highlight'
+import { usePathname } from 'next/navigation';
+
+
+function useHighlighter(): (path: string) => string {
+    let pathname = usePathname();
+    let curr_path = pathname.replace('/', '').replaceAll('/', "-");
+
+    let getter = (): string => {
+        return curr_path
+    }
+
+    let set_highlight = (name: string): string => {
+        let real_name = name.replace('/', '').replaceAll('/', "-");
+
+        if (real_name === curr_path) {
+            return `block py-2 pl-3 pr-4 text-white bg-purple-700 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-500`
+        }
+
+        return `block py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 hover:bg-gray-200 hover:text-purple-700`
+
+    }
+
+
+
+    return set_highlight
+}
 
 export default function Navar() {
 
-    let [path, highlight] = useHighlighter()
-
+    let highlight = useHighlighter();
 
     return (
 
