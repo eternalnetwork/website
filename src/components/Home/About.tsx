@@ -1,4 +1,6 @@
 import Image from "next/image";
+import carousel_1 from '../../../public/carousel-1.svg'
+
 
 export default function About() {
   return (
@@ -7,7 +9,7 @@ export default function About() {
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <Image height={800} width={800} src="https://flowbite.com/docs/images/carousel/carousel-1.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <Image height={800} width={800} src={carousel_1} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image height={800} width={800} src="https://flowbite.com/docs/images/carousel/carousel-2.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
