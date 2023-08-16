@@ -4,7 +4,7 @@ import carousel_1 from '../../../public/carousel-1.svg'
 
 export default function About() {
   return (
-    <section id="about" className='w-screen h-screen text-white bg-black px-32 py-32'>
+    <section id="about" className='h-screen text-white bg-black px-32 py-32'>
       <h1 className="bold md:text-9xl text-5xl flex items-center justify-center">What do we do?</h1>
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">

@@ -1,7 +1,7 @@
 import About from '~/components/Home/About'
 import Hero from '~/components/Home/Hero'
 import Roadmap from '~/components/Home/Roadmap'
-import styles from '~/lib/styles'
+import Chains from '~/components/Home/Chains'
 
 export let metadata = {
   title: "Home | Eternal"
@@ -9,10 +9,11 @@ export let metadata = {
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="no-scrollbar overflow-y-auto">
       <Hero />
-      <About />
-      <Roadmap />
+      {/* <About /> */}
+      <Chains />
+      {/* <Roadmap /> */}
     </main>
   )
 }

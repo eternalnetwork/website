@@ -22,11 +22,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={'w-full h-42 overflow-y-scroll no-scrollbar'}>
         <Navbar />
         {children}
         <Footer />
-        <Script src='../../node_modules/flowbite/dist/flowbite.min.js'></Script>
       </body>
     </html>
   )

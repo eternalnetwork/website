@@ -2,7 +2,7 @@ import RoadmapStage from "./RoadmapStage";
 
 export default function Roadmap() {
     return (
-        <section id="roadmap" className='w-screen h-screen text-white bg-black px-32 py-32'>
+        <section id="roadmap" className='h-screen text-white bg-black px-32 py-32'>
 
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 <RoadmapStage
